@@ -217,6 +217,7 @@ body {
 .index-wrapper .center-fix .center-inner .block-area .list-item .right .prices .price-item .price .previous {
   display: inline-block;
   vertical-align: middle;
+  text-decoration: line-through;
   color: #b7b7b7;
   font-size: 6px;
 }

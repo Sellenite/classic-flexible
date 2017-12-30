@@ -1,5 +1,5 @@
 @import "mixin";
-// 物件长度按照设计图的尺寸进行调整px2em()
+// 物件长度按照设计图的尺寸进行调整px2rem()
 // 字体不使用rem，使用配合dpr来提高字体大小@include font-dpr()
 html,
 body {
@@ -10,12 +10,12 @@ body {
 .item-section {
     .item-section_header {
         img {
-            width: px2em(750px);
+            width: px2rem(750px);
             display: block;
         }
     }
     ul {
-        padding: px2em(10px);
+        padding: px2rem(10px);
         .flag {
             display: table;
             width: 100%;
@@ -23,22 +23,22 @@ body {
             background-color: #fff;
             .flag-item {
                 display: table-cell;
-                padding: px2em(12px) 0;
+                padding: px2rem(12px) 0;
                 vertical-align: top;
                 background-color: #fff;
                 &.figure {
-                    width: px2em(180px);
-                    height: px2em(180px);
+                    width: px2rem(180px);
+                    height: px2rem(180px);
                     img {
-                        width: px2em(180px);
-                        height: px2em(180px);
+                        width: px2rem(180px);
+                        height: px2rem(180px);
                         vertical-align: top;
                     }
                 }
                 &.figcaption {
-                    width: px2em(1000px);
-                    padding-left: px2em(15px);
-                    padding-right: px2em(15px);
+                    width: px2rem(1000px);
+                    padding-left: px2rem(15px);
+                    padding-right: px2rem(15px);
                     position: relative;
                     .flag-title {
                         a {
@@ -55,17 +55,17 @@ body {
                         }
                     }
                     .flag-price {
-                        padding: px2em(11.25px) 0 px2em(15px);
+                        padding: px2rem(11.25px) 0 px2rem(15px);
                         span {
                             display: inline-block;
                             background-color: #ee0a3b;
                             vertical-align: middle;
-                            border-radius: px2em(2px);
-                            padding: 0 px2em(6px);
+                            border-radius: px2rem(2px);
+                            padding: 0 px2rem(6px);
                             line-height: 1.2;
                             color: #fff;
                             font-weight: 700;
-                            margin-right: px2em(5px);
+                            margin-right: px2rem(5px);
                             @include font-dpr(11px);
                         }
                         strong {
@@ -75,7 +75,7 @@ body {
                             font-weight: 700;
                             color: #ee0a3b;
                             font-size: 16px;
-                            margin-right: px2em(12px);
+                            margin-right: px2rem(12px);
                         }
                         small {
                             display: inline-block;
@@ -90,16 +90,16 @@ body {
                     }
                     .flag-btn {
                         position: absolute;
-                        width: px2em(160px);
-                        padding: px2em(12px) 0;
+                        width: px2rem(160px);
+                        padding: px2rem(12px) 0;
                         background-color: #ee0a3b;
                         text-align: center;
                         color: #fff;
                         font-weight: 700;
                         @include font-dpr(14px);
-                        bottom: px2em(10px);
-                        right: px2em(15px);
-                        border-radius: px2em(2px);
+                        bottom: px2rem(10px);
+                        right: px2rem(15px);
+                        border-radius: px2rem(2px);
                     }
                 }
             }

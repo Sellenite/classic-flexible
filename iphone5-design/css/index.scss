@@ -1,5 +1,5 @@
 @import "mixin";
-// px2em()
+// px2rem()
 // @include font-dpr()
 html,
 body {
@@ -23,7 +23,7 @@ body {
     }
     .kind {
         display: flex;
-        padding: px2em(16px) 0;
+        padding: px2rem(16px) 0;
         background-color: #488892;
         .kind-left,
         .kind-right {
@@ -31,7 +31,7 @@ body {
             box-sizing: border-box;
             text-align: center;
             img {
-                width: px2em(146px);
+                width: px2rem(146px);
                 display: inline-block;
                 vertical-align: top;
             }
@@ -43,7 +43,7 @@ body {
     .center-fix {
         width: calc(100% - 0.3125rem);
         margin: 0 auto;
-        padding-bottom: px2em(10px);
+        padding-bottom: px2rem(10px);
         .decoration-top,
         .decoration-mid,
         .decoration-bot {
@@ -54,7 +54,7 @@ body {
         }
         .center-inner {
             background-color: #FFF;
-            padding: px2em(42px) px2em(14px);
+            padding: px2rem(42px) px2rem(14px);
             .block-area {
                 &>.title {
                     width: 50%;
@@ -66,30 +66,30 @@ body {
                 &.seafood>.hr {
                     height: 1px;
                     background-color: #5fb5d8;
-                    margin: px2em(26px) 0;
+                    margin: px2rem(26px) 0;
                 }
                 &.beef>.hr {
                     height: 1px;
                     background-color: #ff0000;
-                    margin: px2em(26px) 0;
+                    margin: px2rem(26px) 0;
                 }
                 .list-item {
                     box-sizing: border-box;
                     width: 100%;
-                    height: px2em(262px);
-                    padding: px2em(25px) px2em(7px);
-                    margin-bottom: px2em(30px);
-                    box-shadow: 0 0 px2em(8px) rgba(0, 0, 0, 0.2);
+                    height: px2rem(262px);
+                    padding: px2rem(25px) px2rem(7px);
+                    margin-bottom: px2rem(30px);
+                    box-shadow: 0 0 px2rem(8px) rgba(0, 0, 0, 0.2);
                     position: relative;
                     &:last-of-type {
                         margin-bottom: 0;
                     }
                     .border-decoration {
                         position: absolute;
-                        width: px2em(65px);
-                        height: px2em(59px);
+                        width: px2rem(65px);
+                        height: px2rem(59px);
                         top: 0;
-                        left: px2em(4px);
+                        left: px2rem(4px);
                         img {
                             width: 100%;
                             display: block;
@@ -98,7 +98,7 @@ body {
                     .left {
                         float: left;
                         height: 100%;
-                        margin-right: px2em(11px);
+                        margin-right: px2rem(11px);
                         img {
                             height: 100%;
                             display: block;
@@ -113,27 +113,27 @@ body {
                             overflow: hidden;
                             text-overflow: ellipsis;
                             color: #000;
-                            line-height: px2em(24)px;
-                            margin-bottom: px2em(8px);
+                            line-height: px2rem(24)px;
+                            margin-bottom: px2rem(8px);
                             @include font-dpr(11px);
                         }
                         .en-title {
                             color: #a8a8a8;
                             @include font-dpr(9px);
-                            margin-bottom: px2em(11px);
+                            margin-bottom: px2rem(11px);
                         }
                         .desc {
                             white-space: nowrap;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             color: #a8a8a8;
-                            margin-bottom: px2em(18px);
+                            margin-bottom: px2rem(18px);
                             @include font-dpr(9px);
                         }
                         .hr {
                             height: 1px;
                             background-color: #a8a8a8;
-                            margin-bottom: px2em(22px);
+                            margin-bottom: px2rem(22px);
                         }
                         .prices {
                             display: flex;
@@ -165,15 +165,15 @@ body {
                                 }
                                 .weight {
                                     text-align: center;
-                                    height: px2em(34px);
-                                    line-height: px2em(34px);
+                                    height: px2rem(34px);
+                                    line-height: px2rem(34px);
                                     color: #000;
                                     @include font-dpr(7px);
                                 }
                                 .button {
                                     display: block;
-                                    line-height: px2em(36px);
-                                    height: px2em(36px);
+                                    line-height: px2rem(36px);
+                                    height: px2rem(36px);
                                     text-align: center;
                                     background: #b28435;
                                     color: #FFF;

@@ -113,7 +113,7 @@ body {
                             overflow: hidden;
                             text-overflow: ellipsis;
                             color: #000;
-                            line-height: px2rem(24)px;
+                            line-height: px2rem(24px);
                             margin-bottom: px2rem(8px);
                             @include font-dpr(11px);
                         }

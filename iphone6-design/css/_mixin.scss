@@ -6,12 +6,20 @@
     @return ($px / $base-font-size) * 1rem;
 }
 
+// 移动端尺寸自适应rem与dpr无关，可放心使用
+// 字体直接使用rem的方法也没问题，变动的只是单位变成rem，且某些值可能会有微小偏差（无法整除导致）
+// 注意这个rem版本的flexible是自带缩放的，会将viewport的initial-scale设置成【1/dpr】，具体看源码就清楚
+// 自动设置viewport的initial-scale设置成【1/dpr】的好处是不用处理border-1px的问题
+// 所以这里直接使用px是没有问题的，对应的dpr已经进行过处理
+// iphone6-8，dpr为2为例，直接传入750px宽度设置图的字体大小即可
 @mixin font-dpr($font-size) {
-    font-size: $font-size;
+	// 如果直接除2，结果变量是带单位的，如果除法运算的时候上下都带单位，最终结果是没单位的
+	$size: $font-size / 2;
+    font-size: $size;
     [data-dpr="2"] & {
-        font-size: $font-size * 2;
+        font-size: $size * 2;
     }
     [data-dpr="3"] & {
-        font-size: $font-size * 3;
+        font-size: $size * 3;
     }
 }

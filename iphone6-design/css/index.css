@@ -1,153 +1,106 @@
 html,
 body {
   height: 100vh;
-  background-color: #ee0a3b;
-}
+  background-color: #ee0a3b; }
 
 .item-section .item-section_header img {
   width: 10rem;
-  display: block;
-}
-
+  display: block; }
 .item-section ul {
-  padding: 0.13333rem;
-}
+  padding: 0.1333333333rem; }
+  .item-section ul .flag {
+    display: table;
+    width: 100%;
+    margin-bottom: 1px;
+    background-color: #fff; }
+    .item-section ul .flag .flag-item {
+      display: table-cell;
+      padding: 0.16rem 0;
+      vertical-align: top;
+      background-color: #fff; }
+      .item-section ul .flag .flag-item.figure {
+        width: 2.4rem;
+        height: 2.4rem; }
+        .item-section ul .flag .flag-item.figure img {
+          width: 2.4rem;
+          height: 2.4rem;
+          vertical-align: top; }
+      .item-section ul .flag .flag-item.figcaption {
+        width: 13.3333333333rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        position: relative; }
+        .item-section ul .flag .flag-item.figcaption .flag-title a {
+          font-size: 12px;
+          color: #333;
+          line-height: 1.25;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+          box-orient: vertical;
+          display: -webkit-box;
+          display: box; }
+          [data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-title a {
+            font-size: 24px; }
+          [data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-title a {
+            font-size: 36px; }
+        .item-section ul .flag .flag-item.figcaption .flag-price {
+          padding: 0.15rem 0 0.2rem; }
+          .item-section ul .flag .flag-item.figcaption .flag-price span {
+            display: inline-block;
+            background-color: #ee0a3b;
+            vertical-align: middle;
+            border-radius: 0.0266666667rem;
+            padding: 0 0.08rem;
+            line-height: 1.2;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 0.0666666667rem;
+            font-size: 11px; }
+            [data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-price span {
+              font-size: 22px; }
+            [data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-price span {
+              font-size: 33px; }
+          .item-section ul .flag .flag-item.figcaption .flag-price strong {
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 700;
+            color: #ee0a3b;
+            font-size: 16px;
+            margin-right: 0.16rem; }
+            [data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-price strong {
+              font-size: 32px; }
+            [data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-price strong {
+              font-size: 48px; }
+          .item-section ul .flag .flag-item.figcaption .flag-price small {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 700;
+            color: #ee0a3b;
+            font-size: 12px; }
+            [data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-price small {
+              font-size: 24px; }
+            [data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-price small {
+              font-size: 36px; }
+        .item-section ul .flag .flag-item.figcaption .flag-type {
+          color: #ff3600; }
+        .item-section ul .flag .flag-item.figcaption .flag-btn {
+          position: absolute;
+          width: 2.1333333333rem;
+          padding: 0.16rem 0;
+          background-color: #ee0a3b;
+          text-align: center;
+          color: #fff;
+          font-weight: 700;
+          font-size: 14px;
+          bottom: 0.1333333333rem;
+          right: 0.2rem;
+          border-radius: 0.0266666667rem; }
+          [data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-btn {
+            font-size: 28px; }
+          [data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-btn {
+            font-size: 42px; }
 
-.item-section ul .flag {
-  display: table;
-  width: 100%;
-  margin-bottom: 1px;
-  background-color: #fff;
-}
-
-.item-section ul .flag .flag-item {
-  display: table-cell;
-  padding: 0.16rem 0;
-  vertical-align: top;
-  background-color: #fff;
-}
-
-.item-section ul .flag .flag-item.figure {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.item-section ul .flag .flag-item.figure img {
-  width: 2.4rem;
-  height: 2.4rem;
-  vertical-align: top;
-}
-
-.item-section ul .flag .flag-item.figcaption {
-  width: 13.33333rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  position: relative;
-}
-
-.item-section ul .flag .flag-item.figcaption .flag-title a {
-  font-size: 12px;
-  color: #333;
-  line-height: 1.25;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  box-orient: vertical;
-  display: -webkit-box;
-  display: box;
-}
-
-[data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-title a {
-  font-size: 24px;
-}
-
-[data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-title a {
-  font-size: 36px;
-}
-
-.item-section ul .flag .flag-item.figcaption .flag-price {
-  padding: 0.15rem 0 0.2rem;
-}
-
-.item-section ul .flag .flag-item.figcaption .flag-price span {
-  display: inline-block;
-  background-color: #ee0a3b;
-  vertical-align: middle;
-  border-radius: 0.02667rem;
-  padding: 0 0.08rem;
-  line-height: 1.2;
-  color: #fff;
-  font-weight: 700;
-  margin-right: 0.06667rem;
-  font-size: 11px;
-}
-
-[data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-price span {
-  font-size: 22px;
-}
-
-[data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-price span {
-  font-size: 33px;
-}
-
-.item-section ul .flag .flag-item.figcaption .flag-price strong {
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: middle;
-  font-weight: 700;
-  color: #ee0a3b;
-  font-size: 16px;
-  margin-right: 0.16rem;
-}
-
-[data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-price strong {
-  font-size: 32px;
-}
-
-[data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-price strong {
-  font-size: 48px;
-}
-
-.item-section ul .flag .flag-item.figcaption .flag-price small {
-  display: inline-block;
-  vertical-align: middle;
-  font-weight: 700;
-  color: #ee0a3b;
-  font-size: 12px;
-}
-
-[data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-price small {
-  font-size: 24px;
-}
-
-[data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-price small {
-  font-size: 36px;
-}
-
-.item-section ul .flag .flag-item.figcaption .flag-type {
-  color: #ff3600;
-}
-
-.item-section ul .flag .flag-item.figcaption .flag-btn {
-  position: absolute;
-  width: 2.13333rem;
-  padding: 0.16rem 0;
-  background-color: #ee0a3b;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  bottom: 0.13333rem;
-  right: 0.2rem;
-  border-radius: 0.02667rem;
-}
-
-[data-dpr="2"] .item-section ul .flag .flag-item.figcaption .flag-btn {
-  font-size: 28px;
-}
-
-[data-dpr="3"] .item-section ul .flag .flag-item.figcaption .flag-btn {
-  font-size: 42px;
-}
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,7 @@
 @import "mixin";
 // 物件长度按照设计图的尺寸进行调整px2rem()
-// 字体不使用rem，使用配合dpr来提高字体大小@include font-dpr()
+// 字体也可以直接使用px2rem，使用rem单位也没有问题的
+// font-dpr直接传入设计图的字体大小，最终单位是px，会根据dpr进行放大倍数
 html,
 body {
     height: 100vh;
@@ -42,7 +43,9 @@ body {
                     position: relative;
                     .flag-title {
                         a {
-                            @include font-dpr(12px);
+                            // 设计图就是24px的
+                            // font-size: px2rem(24px);
+                            @include font-dpr(24px);
                             color: #333;
                             line-height: 1.25;
                             overflow: hidden;
@@ -66,10 +69,10 @@ body {
                             color: #fff;
                             font-weight: 700;
                             margin-right: px2rem(5px);
-                            @include font-dpr(11px);
+                            @include font-dpr(22px);
                         }
                         strong {
-                            @include font-dpr(16px);
+                            @include font-dpr(32px);
                             display: inline-block;
                             vertical-align: middle;
                             font-weight: 700;
@@ -82,7 +85,7 @@ body {
                             vertical-align: middle;
                             font-weight: 700;
                             color: #ee0a3b;
-                            @include font-dpr(12px);
+                            @include font-dpr(24px);
                         }
                     }
                     .flag-type {
@@ -96,7 +99,7 @@ body {
                         text-align: center;
                         color: #fff;
                         font-weight: 700;
-                        @include font-dpr(14px);
+                        @include font-dpr(28px);
                         bottom: px2rem(10px);
                         right: px2rem(15px);
                         border-radius: px2rem(2px);
